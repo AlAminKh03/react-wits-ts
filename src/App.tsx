@@ -1,6 +1,9 @@
 import './App.css';
 import Button from './Components/Button';
 import Checking from './Components/Checking';
+import Box from './Components/Context/Box';
+import ThemeContextProvider from './Components/Context/ThemeContext';
+import ThemeContext from './Components/Context/ThemeContext';
 import Greet from './Components/Greet';
 import InputField from './Components/Input';
 import Message from './Components/Message';
@@ -32,16 +35,9 @@ const PersonLists =[
 
   return (
     <div className="App">
-  <Message>This is just a placeholders</Message>
-  <Oscar>
-    <Message>And the oscar goes to to decaprio</Message>
-  </Oscar>
-  <Button/>
-  <InputField value='' onChange={(e,id)=>{
-    console.log('onChanged')
-  }}/>
-  <Checking/>
-  <User/>
+<ThemeContextProvider>
+<Box/>
+</ThemeContextProvider>
     </div>
   );
 }
