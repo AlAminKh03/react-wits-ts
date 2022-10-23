@@ -1,11 +1,10 @@
 import { createContext } from "react";
-import Box from "./Box";
 import { theme } from "./theme";
 type ContextProviderChildren={
     children:React.ReactNode
 }
 
-const ThemeContext= createContext(theme)
+export const ThemeContext= createContext(theme)
 
 const ThemeContextProvider = ({ children }: ContextProviderChildren) => {
    
