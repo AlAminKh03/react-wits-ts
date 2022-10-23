@@ -1,6 +1,8 @@
 import './App.css';
-import UserContextProvider from './Components/Context/USerContext';
-import User from './Components/Context/User';
+import Private from './Components/auth/Private';
+import Profile from './Components/auth/Profile';
+// import UserContextProvider from './Components/Context/USerContext';
+// import User from './Components/Context/User';
 
 function App() {
 const PersonName ={
@@ -25,9 +27,10 @@ const PersonLists =[
 
   return (
     <div className="App">
-<UserContextProvider>
+{/* <UserContextProvider>
   <User/>
-</UserContextProvider>
+</UserContextProvider> */}
+<Private isLoggedIn={true} Component={Profile}/>
     </div>
   );
 }
