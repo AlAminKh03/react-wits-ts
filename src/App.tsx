@@ -1,6 +1,7 @@
 import './App.css';
-import Private from './Components/auth/Private';
-import Profile from './Components/auth/Profile';
+// import Private from './Components/auth/Private';
+// import Profile from './Components/auth/Profile';
+import Counter from './Components/state/Counter';
 // import UserContextProvider from './Components/Context/USerContext';
 // import User from './Components/Context/User';
 
@@ -30,7 +31,8 @@ const PersonLists =[
 {/* <UserContextProvider>
   <User/>
 </UserContextProvider> */}
-<Private isLoggedIn={true} Component={Profile}/>
+{/* <Private isLoggedIn={true} Component={Profile}/> */}
+<Counter/>
     </div>
   );
 }

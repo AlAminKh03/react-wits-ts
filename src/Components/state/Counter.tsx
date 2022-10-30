@@ -38,6 +38,9 @@ case 'reset':{
 }
 const Counter = () => {
     const[state,dispatch]=useReducer(reducer,initialState)
+    // console.log(dispatch)
+    console.log(state)
+    console.log(initialState)
     return ( <>
     count: {state.count}
     <button onClick={()=>{dispatch({type:'increment',payload:10})
