@@ -4,6 +4,9 @@ type Props = {}
 
 export default function component({}: Props) {
   return (
-    <div>Hello js </div>
+    <>
+    <div>Typescript</div>
+    <p>i have learned ts today very much</p>
+    </>
   )
 }
